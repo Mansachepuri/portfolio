@@ -2,368 +2,548 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="ManasaChepuri" content="width=device-width, initial-scale=1.0" />
-  <title>ManasaChepuri • Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="ManasaChepuri — Data Engineer | SQL | Python | AWS | Spark | Power BI | RAG/LLMs" />
+  <title>Manasa Chepuri | AI Engineer • Data Scientist • Data Engineer</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta
+    name="description"
+    content="Manasa Chepuri — AI Engineer, Data Scientist, and Data Engineer building LLM applications, RAG systems, data pipelines, machine learning workflows, and analytics dashboards."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="text-white bg-gray-900">
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#home" class="brand" aria-label="Manasa Chepuri home">
+        <span class="brand-mark">MC</span>
+        <span>Manasa Chepuri</span>
+      </a>
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full bg-black bg-opacity-70 z-50 p-4">
-    <div class="flex items-center justify-between max-w-7xl mx-auto">
-      <div class="text-xl font-bold text-white">ManasaChepuri</div>
-
-      <button id="menu-button" class="md:hidden text-white focus:outline-none" aria-label="Open menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+      <button id="menu-button" class="menu-button" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <ul class="hidden md:flex space-x-6 text-white">
-        <li><a href="#about" class="hover:text-teal-400">About</a></li>
-        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
-        <li><a href="#experience" class="hover:text-teal-400">Experience</a></li>
-        <li><a href="#skills" class="hover:text-teal-400">Skills</a></li>
-        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
-    </div>
+    </nav>
+  </header>
 
-    <ul id="mobile-menu" class="mt-4 space-y-4 text-white md:hidden hidden text-center">
-      <li><a href="#about" class="block hover:text-teal-400">About</a></li>
-      <li><a href="#projects" class="block hover:text-teal-400">Projects</a></li>
-      <li><a href="#experience" class="block hover:text-teal-400">Experience</a></li>
-      <li><a href="#skills" class="block hover:text-teal-400">Skills</a></li>
-      <li><a href="#contact" class="block hover:text-teal-400">Contact</a></li>
-    </ul>
-  </nav>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+      <div class="hero-background"></div>
 
-  <!-- Hero (AI / LLM Reactive Canvas) -->
-<section class="relative h-screen overflow-hidden flex flex-col justify-center items-center px-6 text-center">
-  <canvas id="ai-canvas" class="absolute inset-0 z-0"></canvas>
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <p class="eyebrow">AI Engineer • Data Scientist • Data Engineer</p>
 
-  <div class="relative z-10 max-w-4xl pt-20">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4 fade-in-loop">
-      <span>M</span><span>a</span><span>n</span><span>a</span><span>s</span><span>a</span>
-      <span>&nbsp;</span>
-      <span>C</span><span>h</span><span>e</span><span>p</span><span>u</span><span>r</span><span>i</span>
-    </h1>
+          <h1>
+            Building AI and data systems that turn complex data into clear decisions.
+          </h1>
 
-    <p class="text-lg md:text-xl font-medium mb-6 text-gray-200">
-      Data Engineer • AI • LLM • Cloud
-    </p>
+          <p class="hero-copy">
+            I’m Manasa Chepuri, a Computer Science graduate focused on LLM applications,
+            RAG systems, scalable data pipelines, machine learning workflows, and analytics
+            products that are practical, reliable, and business-ready.
+          </p>
 
-    <div class="flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="#projects" class="bg-teal-500 px-6 py-3 rounded hover:bg-teal-600 transition">View Projects</a>
-      <a href="#contact" class="border border-teal-400 px-6 py-3 rounded hover:bg-teal-600 hover:border-teal-600 transition">Contact Me</a>
-    </div>
-  </div>
-</section>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="assets/MANASA_CHEPURI_RESUME.pdf" target="_blank" class="btn btn-secondary">
+              Download Resume
+            </a>
+            <a href="https://github.com/Mansachepuri" target="_blank" rel="noreferrer" class="btn btn-ghost">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/manasagoud" target="_blank" rel="noreferrer" class="btn btn-ghost">
+              LinkedIn
+            </a>
+          </div>
 
-       
+          <div class="hero-proof">
+            <div>
+              <strong>3+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div>
+              <strong>6</strong>
+              <span>Featured Projects</span>
+            </div>
+            <div>
+              <strong>AI + Data</strong>
+              <span>LLMs, RAG, ETL, ML</span>
+            </div>
+          </div>
+        </div>
 
-      
-    </div>
-  </section>
+        <aside class="hero-card reveal">
+          <div class="profile-frame">
+            <img src="assets/IMG_9604.JPG" alt="Manasa Chepuri" />
+          </div>
 
-  <!-- About -->
-  <section id="about" class="py-20 px-6 bg-gray-900">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start md:space-x-10">
+          <div class="hero-card-body">
+            <p class="card-label">Currently focused on</p>
+            <h2>AI + Data Engineering</h2>
 
-      <div class="mb-8 md:mb-0 w-64 h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg border-4 border-white">
-        <img src="assets/IMG_9604.JPG"  class="w-full h-full object-cover">
+            <div class="mini-list">
+              <span>LLM / RAG Applications</span>
+              <span>Scalable ETL Pipelines</span>
+              <span>SQL Analytics Layers</span>
+              <span>Healthcare & Business Data</span>
+            </div>
+          </div>
+        </aside>
       </div>
+    </section>
 
-      <div class="text-center md:text-left">
-        <h2 class="text-4xl font-bold mb-4 text-white">About Me</h2>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container split-grid">
+        <div class="section-intro reveal">
+          <p class="section-label">About Me</p>
+          <h2>Technical, practical, and impact-focused.</h2>
+        </div>
 
-        <p class="text-gray-300 text-lg leading-relaxed max-w-2xl">
-          I'm a Data Engineer with 3+ years of experience building scalable ETL pipelines and AI-driven data systems using Python, SQL, PySpark, AWS Glue, 
-          and Apache Airflow. Hands-on experience in metadata tracking, pipeline optimization, and large-scale data processing. 
-          Experienced in developing RAG-based applications, benchmarking embedding models, integrating vector databases (FAISS/Chroma),
-          and building LangGraph-powered LLM workflows with structured prompting and validation. Focused on delivering reliable, high-performance
-          data and AI solutions.
-        </p> 
+        <div class="about-content reveal">
+          <p>
+            I work at the intersection of AI engineering, data science, and data engineering.
+            My experience includes building automated pipelines, modeling analytical datasets,
+            developing ML workflows, designing dashboards, and experimenting with LLM-powered systems.
+          </p>
+
+          <p>
+            I enjoy solving problems where data quality, scalable architecture, and intelligent automation
+            come together. My goal is to build systems that are not only technically strong, but also clear,
+            usable, and valuable for stakeholders.
+          </p>
+
+          <div class="about-highlights">
+            <div>
+              <h3>AI Systems</h3>
+              <p>RAG, agents, prompt design, retrieval quality, and LLM validation.</p>
+            </div>
+            <div>
+              <h3>Data Platforms</h3>
+              <p>ETL, SQL models, Airflow orchestration, and quality checks.</p>
+            </div>
+            <div>
+              <h3>Analytics</h3>
+              <p>Dashboards, KPI reporting, ML-ready features, and business insights.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-20 px-6 bg-gray-800">
-    <h2 class="text-3xl font-bold mb-10 text-center text-white">Projects</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
-      <a href="https://github.com/Mansachepuri/finance-rag-copilot" target="_blank" rel="noreferrer"
-         class="bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105 duration-300">
-        <img src="assets/Executive_dashboard.png" alt="RAG Monitoring" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h3 class="text-lg font-semibold mb-2 text-white">Finance RAG Copilot</h3>
-          <p class="text-sm text-gray-300">
-            Built a production-style RAG system that turns structured financial data into executive-ready insights using AWS Bedrock, pgvector, FastAPI, and Streamlit.
+    <!-- Projects -->
+    <section id="projects" class="section section-soft">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="section-label">Selected Work</p>
+          <h2>Featured AI & Data Projects</h2>
+          <p>
+            Practical projects across LLM applications, data engineering, healthcare analytics,
+            BI dashboards, and machine learning.
           </p>
         </div>
-      </a>
 
-      <a href="https://github.com/Mansachepuri/olist-ecommerce-data-platform" target="_blank" rel="noreferrer""
-        class="bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105 duration-300">
-        <img src="ETL.jpg" alt="E-commerce Analytics Platform" class="w-full h-48 object-cover" />
-      <div class = "p-4">
-        <h3 class="text-lg font-semibold mb-2 text-white">E-commerce Analytics Platform</h3>
-        <p class="text-sm text-gray-300">
-        Built an end-to-end e-commerce analytics platform using a Bronze → Silver → Gold data architecture.
-      Orchestrated pipelines with Apache Airflow, implemented data quality checks, and delivered KPIs via PostgreSQL and Metabase.
-      </p>>
+        <div class="project-grid">
+          <a href="https://github.com/Mansachepuri/finance-rag-copilot" target="_blank" rel="noreferrer" class="project-card reveal">
+            <img src="assets/Executive_dashboard.png" alt="Finance RAG Copilot dashboard" />
+            <div class="project-body">
+              <span class="project-tag">LLM • RAG • Data App</span>
+              <h3>Finance RAG Copilot</h3>
+              <p>
+                Production-style RAG system that turns financial data into executive-ready insights
+                using vector search, backend APIs, and an interactive app layer.
+              </p>
+              <div class="tech-row">
+                <span>AWS Bedrock</span>
+                <span>pgvector</span>
+                <span>FastAPI</span>
+                <span>Streamlit</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Mansachepuri/olist-ecommerce-data-platform" target="_blank" rel="noreferrer" class="project-card reveal">
+            <img src="ETL.jpg" alt="E-commerce ETL pipeline" />
+            <div class="project-body">
+              <span class="project-tag">Data Engineering • Analytics</span>
+              <h3>E-commerce Analytics Platform</h3>
+              <p>
+                End-to-end analytics platform using Bronze, Silver, and Gold layers,
+                Airflow orchestration, PostgreSQL, data quality checks, and BI-ready outputs.
+              </p>
+              <div class="tech-row">
+                <span>Python</span>
+                <span>Airflow</span>
+                <span>PostgreSQL</span>
+                <span>Metabase</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Mansachepuri/insurance-plan-data-analysis" target="_blank" rel="noreferrer" class="project-card reveal">
+            <img src="assets/health_insurance.jpeg" alt="Health insurance recommendation system" />
+            <div class="project-body">
+              <span class="project-tag">Healthcare • SQL • API</span>
+              <h3>Health Insurance Recommendation System</h3>
+              <p>
+                Plan selection and analysis tool with structured data modeling,
+                automated querying, FastAPI endpoints, and recommendation-focused analytics.
+              </p>
+              <div class="tech-row">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>FastAPI</span>
+                <span>Analytics</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Mansachepuri/covid19-trends-visualization" target="_blank" rel="noreferrer" class="project-card reveal">
+            <img src="assets/covid.png" alt="COVID-19 trends dashboard" />
+            <div class="project-body">
+              <span class="project-tag">Dashboard • SQL • BI</span>
+              <h3>COVID-19 Trends Dashboard</h3>
+              <p>
+                SQL-based global COVID-19 analysis with dashboard-ready insights for cases,
+                deaths, infection rates, vaccination progress, and country-level trends.
+              </p>
+              <div class="tech-row">
+                <span>SQL</span>
+                <span>BI</span>
+                <span>Visualization</span>
+                <span>Analysis</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="project-card reveal">
+            <img src="assets/excel.png" alt="Trauma registry data quality analysis" />
+            <div class="project-body">
+              <span class="project-tag">Healthcare • Data Quality</span>
+              <h3>Trauma Registry Data Quality & Outcomes Analysis</h3>
+              <p>
+                Synthetic trauma registry workflow for validating patient records,
+                identifying missing fields, deduplicating encounters, and producing reporting-ready charts.
+              </p>
+              <div class="tech-row">
+                <span>Pandas</span>
+                <span>SQLite</span>
+                <span>SQL</span>
+                <span>Matplotlib</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Mansachepuri/virtual-tryon-fashion" target="_blank" rel="noreferrer" class="project-card reveal">
+            <img src="assets/manasa.jpg" alt="Virtual try-on fashion AI project" />
+            <div class="project-body">
+              <span class="project-tag">AI • Computer Vision</span>
+              <h3>Virtual Try-On Fashion AI</h3>
+              <p>
+                AI-powered virtual try-on concept focused on image processing,
+                model experimentation, and visual product experience workflows.
+              </p>
+              <div class="tech-row">
+                <span>Python</span>
+                <span>CV</span>
+                <span>Deep Learning</span>
+                <span>Images</span>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
-      </a>
+    </section>
 
-      <a href="https://github.com/Mansachepuri/insurance-plan-data-analysis" target="_blank" rel="noreferrer"
-         class="bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105 duration-300">
-        <img src="assets/health_insurance.jpeg" alt="Health Insurance Recommendation" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h3 class="text-lg font-semibold mb-2 text-white">Health Insurance Recommendation System</h3>
-          <p class="text-sm text-gray-300">
-            Plan selection tool using SQL, Python, and FastAPI with structured ERD and automated querying.
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="section-label">Career</p>
+          <h2>Work Experience</h2>
+          <p>
+            Experience across enterprise data engineering, healthcare analytics,
+            automation, reporting systems, and AI experimentation.
           </p>
         </div>
-      </a>
-       <a href="https://github.com/Mansachepuri/covid19-trends-visualization" target="_blank" rel="noreferrer"
-         class="bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105 duration-300">
-        <img src="assets/covid.png" alt="=" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h3 class="text-lg font-semibold mb-2 text-white"></h3>
-          <p class="text-sm text-gray-300">
-            Analyzed global COVID-19 trends using SQL and built an interactive dashboard to track cases, deaths, infection rates, and vaccination progress across countries.
-            
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Jan 2025 — Present</span>
+              <h3>Data Engineer — Calsoft</h3>
+              <ul>
+                <li>Designed scalable ETL pipelines using AWS Glue, PySpark, and Apache Airflow.</li>
+                <li>Experimented with LangGraph ReAct agents for log analysis and Text-to-SQL workflows.</li>
+                <li>Benchmarked embedding models using retrieval accuracy, relevance, latency, and vector efficiency.</li>
+                <li>Integrated FAISS and Chroma for RAG workflows and retrieval quality analysis.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">May 2025 — Jan 2026</span>
+              <h3>Data Engineer — Community Dreams Foundation</h3>
+              <ul>
+                <li>Engineered automated ETL pipelines using Python, SQL, and Airflow.</li>
+                <li>Improved reporting through data modeling, orchestration, and Power BI dashboards.</li>
+                <li>Normalized and validated datasets to improve metric accuracy and ML readiness.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Oct 2023 — May 2025</span>
+              <h3>Data Engineer Intern — TTU Health Sciences Center</h3>
+              <ul>
+                <li>Automated KPI reporting with API integrations and Power BI dashboards.</li>
+                <li>Built ETL workflows with Airflow for agent performance data and reporting.</li>
+                <li>Applied ML and LLM-based workflows to classify interactions and extract insights.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Jul 2021 — Aug 2023</span>
+              <h3>Data Engineer — Accenture</h3>
+              <ul>
+                <li>Managed Oracle and Snowflake databases for inventory and supply chain reporting.</li>
+                <li>Automated PL/SQL and ETL workflows using Airflow and Python.</li>
+                <li>Built Power BI dashboards and Python monitoring tools for metric tracking.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-soft">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="section-label">Technical Toolkit</p>
+          <h2>Skills & Tech Stack</h2>
+          <p>
+            Tools and technologies I use to build AI products, data systems, ML workflows,
+            and analytics experiences.
           </p>
         </div>
-      </a>
-    </div>
-  </section>
 
-  <!-- Experience -->
-  <section id="experience" class="py-20 px-6 bg-gray-900 text-white">
-    <h2 class="text-3xl font-bold mb-12 text-center">Work Experience</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>AI / LLM Systems</h3>
+            <ul>
+              <li>LLMs, RAG, AI Agents</li>
+              <li>LangChain, LangGraph</li>
+              <li>Prompt Engineering</li>
+              <li>LLM Evaluation & Validation</li>
+              <li>FAISS, Chroma, pgvector</li>
+            </ul>
+          </div>
 
-    <div class="max-w-4xl mx-auto border-l-4 border-teal-500 pl-6 space-y-10">
+          <div class="skill-card reveal">
+            <h3>Data Science / ML</h3>
+            <ul>
+              <li>Python, Pandas, NumPy</li>
+              <li>Scikit-learn</li>
+              <li>Feature Engineering</li>
+              <li>Model Evaluation</li>
+              <li>Statistical Analysis</li>
+            </ul>
+          </div>
 
-      <div class="relative">
-        <div class="absolute -left-3 top-1 w-6 h-6 bg-teal-500 rounded-full border-4 border-gray-900"></div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Data Engineer — Calsoft </h3>
-          <p class="text-sm text-teal-300 italic mb-2">Jan 2025 — Present</p>
-          <ul class="list-disc list-inside text-gray-300 space-y-1">
-            <li> Designed and orchestrated scalable ETL pipelines using AWS Glue, PySpark, and Apache Airflow, implementing metadata
-            tracking to monitor ingestion time, job duration, and pipeline performance.</li>
-            <li>Experimented with LangGraph-based ReAct agents for log analysis and Text-to-SQL workflows, enabling structured reasoning
-            over enterprise datasets.</li>
-            <li>Researched and benchmarked multiple embedding models (OpenAI, Sentence Transformers, BGE, E5), evaluating Top-K
-            retrieval accuracy, vector dimensional efficiency, semantic relevance, and latency to optimize RAG system performance.</li>
-            <li>Integrated embedding models with vector databases (FAISS/Chroma) and conducted performance trade-off analysis between
-            retrieval quality and computational cost.</li>
-            <li>Designed structured prompt frameworks with role-based constraints, input/output validation, adversarial testing, fallback han-
-            dling, and retry logic to improve LLM reliability and reduce hallucinations.</li>
-          </ul>
+          <div class="skill-card reveal">
+            <h3>Data Engineering</h3>
+            <ul>
+              <li>SQL, PL/SQL</li>
+              <li>ETL / ELT Pipelines</li>
+              <li>Apache Airflow</li>
+              <li>PySpark, Spark</li>
+              <li>Data Quality & Validation</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Cloud & Databases</h3>
+            <ul>
+              <li>AWS S3, Glue, Lambda</li>
+              <li>Redshift, SageMaker</li>
+              <li>PostgreSQL, Snowflake</li>
+              <li>Oracle</li>
+              <li>Schema Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Analytics & BI</h3>
+            <ul>
+              <li>Power BI</li>
+              <li>Metabase</li>
+              <li>Excel</li>
+              <li>KPI Reporting</li>
+              <li>Executive Dashboards</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Apps, APIs & Tools</h3>
+            <ul>
+              <li>FastAPI, Streamlit</li>
+              <li>REST API Integrations</li>
+              <li>Git, GitHub</li>
+              <li>Docker Basics</li>
+              <li>VS Code, Jupyter</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="relative">
-        <div class="absolute -left-3 top-1 w-6 h-6 bg-teal-500 rounded-full border-4 border-gray-900"></div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Data Engineer — Community Dreams Foundation (Remote)</h3>
-          <p class="text-sm text-teal-300 italic mb-2">May 2025 — Jan 2026</p>
-          <ul class="list-disc list-inside text-gray-300 space-y-1">
-            <li>Engineered automated ETL pipelines on AWS using Python, SQL, and Airflow, integrating scattered project data into
-centralized repositories and improving decision-making efficiency.</li>
-<li>Optimized cross-team reporting through data modeling and pipeline orchestration, leveraging AWS services and Power BI
-dashboards to deliver real-time insights to stakeholders.</li>
-<li>Normalized and validated datasets using Python and SQL within AWS environments, improving data reliability, performance
-metrics accuracy, and downstream ML readiness.</li>
-<li>Applied statistical and machine learning workflows on AWS SageMaker to analyze operational data, identify bottlenecks,
-and recommend resource optimization strategies.</li>
-<li>Applied BDD to translate technical workflows into clear, visual scenarios for stakeholders, improving understanding and Collaboration </li>
-          </ul>
+    <!-- Focus -->
+    <section id="focus" class="section">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="section-label">What I Build</p>
+          <h2>AI + Data Engineering Focus</h2>
+          <p>
+            Practical systems that connect clean data, automation, model intelligence,
+            and stakeholder-ready decision support.
+          </p>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card reveal">
+            <span>01</span>
+            <h3>AI Applications</h3>
+            <p>
+              LLM-powered assistants, RAG systems, AI agents, structured prompts,
+              evaluation workflows, and automation tools.
+            </p>
+          </article>
+
+          <article class="focus-card reveal">
+            <span>02</span>
+            <h3>Data Systems</h3>
+            <p>
+              ETL pipelines, cleaned datasets, SQL reporting layers, validation workflows,
+              observability, and analytics-ready data models.
+            </p>
+          </article>
+
+          <article class="focus-card reveal">
+            <span>03</span>
+            <h3>Analytics & ML</h3>
+            <p>
+              Dashboards, predictive models, feature engineering, data quality analysis,
+              KPI reporting, and business insights.
+            </p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="relative">
-        <div class="absolute -left-3 top-1 w-6 h-6 bg-teal-500 rounded-full border-4 border-gray-900"></div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Data Engineer Intern — TTU Health Sciences Center</h3>
-          <p class="text-sm text-teal-300 italic mb-2">Oct 2023 — May 2025</p>
-          <ul class="list-disc list-inside text-gray-300 space-y-1">
-            <li>Automated KPI reporting and built scalable data pipelines on AWS, leveraging API integrations and Power BI dashboards to
-improve reporting accuracy and reduce manual effort by 40%.</li>
-<li>Engineered robust ETL workflows with Airflow for ingesting and transforming agent performance data, enhancing data reliability
-and enabling advanced analytics.</li>
-<li>Applied machine learning and LLM-based models to classify agent interactions and extract key performance insights, accel-
-erating decision-making across departments.</li>
-<li>Conducted feature engineering and workflow analysis to identify operational bottlenecks, improving overall process efficiency
-and data utilization.</li>
-<li>Integrated data from Zoom and ServiceNow APIs into centralized AWS storage, automating ingestion pipelines and supporting
-model-driven reporting workflows.</li>
-          </ul>
+    <!-- Education -->
+    <section id="education" class="section section-soft">
+      <div class="container">
+        <div class="center-heading reveal">
+          <p class="section-label">Background</p>
+          <h2>Education & Certifications</h2>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card reveal">
+            <p class="education-type">Graduate Education</p>
+            <h3>Master’s in Computer Science</h3>
+            <p>Texas Tech University</p>
+            <span>Focused on data systems, analytics, machine learning, and AI applications.</span>
+          </article>
+
+          <article class="education-card reveal">
+            <p class="education-type">Technical Focus</p>
+            <h3>AI Engineering • Data Science • Data Engineering</h3>
+            <p>Python, SQL, ML, LLMs, RAG, Cloud Data Pipelines, Analytics, Automation</p>
+            <span>Portfolio built around practical AI/data systems and production-style workflows.</span>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="relative">
-        <div class="absolute -left-3 top-1 w-6 h-6 bg-teal-500 rounded-full border-4 border-gray-900"></div>
-        <div class="ml-4">
-          <h3 class="text-xl font-semibold">Data Engineer — Accenture</h3>
-          <p class="text-sm text-teal-300 italic mb-2">Jul 2021 — Aug 2023</p>
-          <ul class="list-disc list-inside text-gray-300 space-y-1">
-            <li>Managed and optimized Oracle and Snowflake databases, implementing data models and schema designs to enhance inventory
-            and supply chain reporting performance.</li>
-            <li>Automated complex PL/SQL and ETL workflows using Airflow and Python, reducing manual intervention by 40%.</li>
-            <li>Developed scalable data ingestion pipelines integrating API-based and real-time supply forecasting data, improving forecasting
-            accuracy and timeliness.</li>
-            <li>Collaborated with cross-functional teams to translate business requirements into analytical datasets, dashboards, and machine
-            learning–ready features.</li>
-            <li>Built dynamic Power BI dashboards and Python monitoring tools for real-time metric tracking, enabling proactive decision-
-            making and performance optimization.</li>
-            <li>Engineered and maintained ASCP (Advanced Supply Chain Planning) pipelines, applying ML-driven optimization techniques
-            to improve demand forecasting and resource planning.</li>
-          </ul>
+    <!-- Resume CTA -->
+    <section class="cta-section">
+      <div class="container cta-card reveal">
+        <p class="section-label">Open to Opportunities</p>
+        <h2>Looking for an AI/Data professional who can build end-to-end?</h2>
+        <p>
+          I’m open to AI Engineer, Data Scientist, and Data Engineer roles where I can build
+          reliable data platforms, ML workflows, and LLM-powered applications.
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/MANASA_CHEPURI_RESUME.pdf" target="_blank" class="btn btn-primary">
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-container reveal">
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p>
+          Have a role, project, or AI/data opportunity in mind?
+          I’d be happy to connect.
+        </p>
 
-  <!-- Skills -->
-  <!-- Skills -->
-<section id="skills" class="py-20 px-6 bg-gray-900 text-white">
-  <h2 class="text-3xl font-bold mb-10 text-center">Skills</h2>
+        <a href="mailto:manasagoudchepuri@gmail.com" class="email-link">
+          manasagoudchepuri@gmail.com
+        </a>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="contact-links">
+          <a href="https://github.com/Mansachepuri" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/manasagoud" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:manasagoudchepuri@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Core -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
-      <h3 class="text-xl font-semibold mb-3">Core</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>Python, SQL, PL/SQL</li>
-        <li>Data Modeling, KPI Reporting</li>
-        <li>ETL/ELT Design, Pipeline Optimization</li>
-        <li>Metadata Tracking & Observability</li>
-      </ul>
-    </div>
-
-    <!-- Data Engineering -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
-      <h3 class="text-xl font-semibold mb-3">Data Engineering</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>Apache Airflow (Orchestration)</li>
-        <li>PySpark, Spark</li>
-        <li>Bronze → Silver → Gold Architecture</li>
-        <li>Data Quality Checks & Validation</li>
-      </ul>
-    </div>
-
-    <!-- Cloud -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
-      <h3 class="text-xl font-semibold mb-3">Cloud</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>AWS S3, Glue</li>
-        <li>Redshift, Lambda, API Gateway</li>
-        <li>SageMaker</li>
-        <li>CloudWatch</li>
-      </ul>
-    </div>
-
-    <!-- Databases -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
-      <h3 class="text-xl font-semibold mb-3">Databases</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>PostgreSQL (pgvector)</li>
-        <li>Snowflake</li>
-        <li>Oracle</li>
-        <li>Schema Design & Optimization</li>
-      </ul>
-    </div>
-
-    <!-- Analytics / BI -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
-      <h3 class="text-xl font-semibold mb-3">Analytics & BI</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>Power BI (Dashboards & Reporting)</li>
-        <li>Metabase</li>
-        <li>Executive KPI Dashboards</li>
-      </ul>
-    </div>
-
-    <!-- AI / LLM -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
-      <h3 class="text-xl font-semibold mb-3">AI / LLM Systems</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>RAG, Prompt Engineering, Structured Validation</li>
-        <li>LangChain, LangGraph (ReAct / Agentic Workflows)</li>
-        <li>AWS Bedrock</li>
-        <li>Embeddings Benchmarking (OpenAI, BGE, E5, Sentence Transformers)</li>
-        <li>Vector DBs: FAISS, Chroma</li>
-      </ul>
-    </div>
-
-    <!-- Apps / APIs -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300 lg:col-span-2">
-      <h3 class="text-xl font-semibold mb-3">Apps, APIs & Automation</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1 columns-1 md:columns-2">
-        <li>FastAPI</li>
-        <li>Streamlit</li>
-        <li>API Integrations (Zoom, ServiceNow)</li>
-        <li>Logging / Monitoring Tooling</li>
-        <li>Workflow Automation</li>
-      </ul>
-    </div>
-
-    <!-- DevOps -->
-    <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
-      <h3 class="text-xl font-semibold mb-3">DevOps & Tools</h3>
-      <ul class="list-disc list-inside text-gray-300 space-y-1">
-        <li>Docker, Kubernetes</li>
-        <li>Git / GitHub</li>
-        <li>CI/CD Basics</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-  <!-- Contact -->
-  <section id="contact" class="py-20 px-6 bg-gray-800 text-white text-center">
-    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-
-    <p class="mb-4 text-lg">
-      Email:
-      <a href="mailto:manasagoudchepuri@gmail.com" class="text-teal-400 hover:underline">
-        manasagoudchepuri@gmail.com
-      </a>
-    </p>
-     
-
-    <div class="flex justify-center space-x-6 mt-4 text-gray-300 text-2xl">
-      <a href="https://github.com/ManasaChepuri" target="_blank" rel="noreferrer" class="hover:text-teal-400">GitHub</a>
-      <span class="text-gray-500">•</span>
-      <a href="https://linkedin.com/manasachepuri" target="_blank" rel="noreferrer" class="hover:text-teal-400">LinkedIn</a>
-      <span class="text-gray-500">•</span>
-      <a href="https://www.instagram.com/itsmansa__/" target="_blank" rel="noreferrer" class="hover:text-teal-400">Instagram</a>
-
-    </div>
-  </section>
-
-  <footer class="bg-black text-center py-6">
-    <p>© 2025 Manasa Chepuri. All rights reserved.</p>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Manasa Chepuri. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts (load last) -->
-
-  <script src="animation.js"></script>
-  <!-- <script src="neuron-slime.js"></script> -->
-<script src="script.js"></script>
-  <script src="animation.js"></script>
-  <script src="style.css"></script>
-  <script src="neuron.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
